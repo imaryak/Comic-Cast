@@ -1,0 +1,48 @@
+.upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+} .logo{
+    height: 300px;
+} .p-2{
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background-color: #2f435e;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+} h1, a{
+    color: white;
+} .btn-info{
+    width: 80%;
+    font-size: 120%;
+    border: none;
+    text-align: left;
+}.btn-success, .btn-primary{
+    width: 30%;
+    font-size: 120%;
+} ::placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} :-ms-input-placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} ::-ms-input-placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} a {
+    font-size: 90%;
+} a:hover{
+    text-decoration: none;
+}.lower{
+    display: flex;
+    justify-content: center;
+} .limit{
+    width: 490px;
+} .d-block{
+    height: 300px;
+    object-fit: cover;
+}

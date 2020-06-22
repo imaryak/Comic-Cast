@@ -1,0 +1,44 @@
+.upper{
+    display: flex;
+    justify-content: space-around;
+}.p-4{
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: #2f435e;
+}.logo{
+    height: 150px;
+} form{
+    display: flex;
+    justify-content: space-around;
+} .p-3{
+    background-color: #2f435e;
+    border-radius: 10px;
+    text-align: center;
+} h2, h5, h1{
+    color: white;
+}::placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} :-ms-input-placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} ::-ms-input-placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+} .btn-info{
+    width: 240px;
+    text-align: left;
+}.password{
+    font-size: 90%;
+    color: gray;
+} sup{
+    font-size: 20px;
+    color:#DC143C;
+}
+sup:hover, h2:hover, h1:hover{
+    cursor: default;
+}

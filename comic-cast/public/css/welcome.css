@@ -1,0 +1,47 @@
+.upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+} .logo{
+    height: 300px;
+} .p-4{
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background-color: #2f435e;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+} h1, a{
+    color: white;
+} .central{
+    display: flex;
+    justify-content: center;
+} .btn{
+    font-size: 120%;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+} .up{
+    z-index: 2;
+} .down{
+    z-index: 1;
+    opacity: 0%;
+} .up:hover{
+    opacity: 0%;
+    transition: opacity 0.4s;
+} .up:hover ~ .down{
+    opacity: 100%;
+    transition: opacity 0.4s;
+    background-color:rgb(2, 117, 216);
+    border: 0px;
+} a:hover{
+    text-decoration: none;
+} .lower{
+    display: flex;
+    justify-content: center;
+} .limit{
+    width: 490px;
+} .d-block{
+    height: 300px;
+    object-fit: cover;
+}

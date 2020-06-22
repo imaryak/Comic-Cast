@@ -1,0 +1,35 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+        link(rel='stylesheet' href='/css/layout.css')  
+        block extra
+        
+    body
+        .container-fluid
+            if errors
+                for error in errors
+                    .alert.alert-danger.alert-dismissible.fade.show(role="alert")
+                        div=error.msg
+                        button.close(type="button" data-dismiss="alert" aria-label="Close")
+                            span(aria-hidden="true") &times;
+            if(flashMessages)
+                if(flashMessages.success)
+                    .alert.alert-success.alert-dismissible.fade.show
+                        div= flashMessages.success
+                        button.close(type="button" data-dismiss="alert" aria-label="Close")
+                            span(aria-hidden="true") &times;
+                else if(flashMessages.error)
+                    .alert.alert-danger.alert-dismissible.fade.show
+                        div=flashMessages.error
+                        button.close(type="button" data-dismiss="alert" aria-label="Close")
+                            span(aria-hidden="true") &times;
+
+            block content
+
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")       

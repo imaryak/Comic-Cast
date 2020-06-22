@@ -1,0 +1,9 @@
+html, body{
+    width: 100%;
+    background-color:lightsteelblue;
+    display: block;
+    overflow: auto;
+}
+.container-fluid{
+    width: 100%;
+}

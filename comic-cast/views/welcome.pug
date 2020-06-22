@@ -1,0 +1,36 @@
+extends layout.pug
+
+block extra 
+    link(rel='stylesheet' href='/css/welcome.css')
+    title Comicast - Welcome
+
+block content
+    .upper
+        img.logo(src='/images/logo.png')
+        .p-4.mt-0
+            br
+            h1 Welcome
+            br
+            .central
+                a.btn.btn-info.up(href='users/login') Already a User
+                .btn.btn-info.down Login
+            br
+            br
+            .central
+                a.btn.btn-info.up(href='/users/register') New to Comicast
+                .btn.btn-info.down Sign Up
+    .lower
+        .limit
+            .carousel.slide#portfolioslides(data-ride="carousel" data-interval="3500")
+                ol.carousel-indicators
+                    li.active(data-target="#portfolioslides" data-slide-to="0")
+                    li(data-target="#portfolioslides" data-slide-to="1")
+                    li(data-target="#portfolioslides" data-slide-to="2")
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block(src="/images/1slide.png")
+                    .carousel-item
+                        img.d-block(src="/images/2slide.png")
+                    .carousel-item
+                        img.d-block(src="/images/3slide.png")
+

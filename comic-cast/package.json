@@ -1,0 +1,30 @@
+{
+  "name": "comicast_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.5.0",
+    "helmet": "^3.23.1",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.8",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.0"
+  }
+}

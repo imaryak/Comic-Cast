@@ -1,0 +1,38 @@
+extends layout.pug
+
+block extra
+    link(rel='stylesheet' href='/css/home.css')
+    title= 'Home -' + user.name + '- Comicast'
+    
+block content    
+    .upper
+        img(src='/images/logo.png' class="logo")
+        ul.nav.justify-content-end.align-items-center
+            li.nav-item
+                form.form-inline(action='/action_page.php')
+                    input.form-control.mr-sm-2(type='text' placeholder='Search')
+                    button.btn.btn-primary(type='submit') Search
+            a(href="/user" class="btn btn-primary") User
+            a(href="/users/logout" class="btn btn-secondary") Logout
+    br
+    br                
+    div(class="genre1")
+        h3(class="genre") Anecdotal
+        .row.justify-content-around
+            .col-3(class="video1")
+            .col-3(class="video1")
+            .col-3(class="video1")
+    br
+    div(class="genre2")
+        h3(class="genre") Dark
+        .row.justify-content-around
+            .col-3(class="video1")
+            .col-3(class="video1")
+            .col-3(class="video1")
+    br
+    div(class="genre3")
+        h3(class="genre") Deadpan
+        .row.justify-content-around
+            .col-3(class="video1")
+            .col-3(class="video1")
+            .col-3(class="video1")  
