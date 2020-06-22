@@ -12,11 +12,12 @@ var storage = multer.diskStorage({
 });
 
 const fileFilter = function (req, file, cb) {
-    var ext = path.extname(file.originalname);
-    if (ext !== '.jpg' && ext !== '.png' && ext !== '.jpeg') {
-        return cb(new Error('Only images are allowed'))
+    const authorizedMimetypes = ['image/jpeg', 'image/jpg', 'image/png']
+    if (authorizedMimetypes.includes(file.mimetype)) {
+        return cb(null, true);
+    }else{
+        return cb(null, false, console.log("multerError"));
     }
-    cb(null, true)
 }
 
-module.exports = multer({ storage: storage, fileFilter: fileFilter }).single('avatar');
+module.exports = multer({storage: storage, fileFilter: fileFilter}).single('avatar');

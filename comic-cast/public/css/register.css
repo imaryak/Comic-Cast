@@ -1,4 +1,11 @@
-.upper{
+html, body{
+    width: 100%;
+    background-color:lightsteelblue;
+    display: block;
+    overflow: auto;
+}.container-fluid{
+    width: 100%;
+}.upper{
     display: flex;
     justify-content: space-around;
 }.p-4{
@@ -7,7 +14,8 @@
     height: 100px;
     background-color: #2f435e;
 }.logo{
-    height: 150px;
+    height: 130px;
+    margin-top: 20px;
 } form{
     display: flex;
     justify-content: space-around;
@@ -41,4 +49,12 @@
 }
 sup:hover, h2:hover, h1:hover{
     cursor: default;
+}.inner_group{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+} .shorter_input{
+    width: 200px;
+} i{
+    margin-top: 7px;
 }
